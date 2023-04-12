@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <title>Intro Section</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <nav>
+      <div class="left">
+        <h3>snap</h3>
+        <ul class="hide">
+          <li class="Features">
+            <p>Features <img class="feature-dropdown" src="./images/icon-arrow-down.svg" alt=""> </p>
+            <ul class="all-feature" style="display:none;">
+              <li><img src="./images/icon-todo.svg" alt=""> Todo List</li>
+              <li><img src="./images/icon-planning.svg" alt=""> Planning</li>
+              <li><img src="./images/icon-reminders.svg" alt=""> Reminder</li>
+              <li><img src="./images/icon-calendar.svg" alt=""> Calender</li>
+            </ul>
+          </li>
+          <li>
+            <p class="company">Company <img class="company-dropdown" src="./images/icon-arrow-down.svg" alt=""></p>
+            <ul class="all-company" style="display:none">
+              <li>History</li>
+              <li>Team Blog</li>
+              <li>Carrers</li>
+            </ul>
+          </li>
+          <li>
+            <p>Careers</p>
+          </li>
+          <li>
+            <p>About</p>
+          </li>
+        </ul>
+      </div>
+      <div class="right hide">
+        <!-- <a href="#">Login</a> -->
+        <p>Login</p>
+        <button>Register</button>
 
-  Features
-  Company
-  Careers
-  About
+      </div>
+    </nav>
+    <button class="menu-btn"> <img src="./images/icon-menu.svg" alt=""></button>
+    <div class="mobile-view hidden" style="display:none">
+      <ul>
+        <li class="Features">
+          <p>Features <img src="./images/icon-arrow-down.svg" alt=""> </p>
+        </li>
+        <li>
+          <p>Company <img src="./images/icon-arrow-down.svg" alt=""> </p>
+        </li>
+        <li>
+          <p> Careers</p>
+        </li>
+        <li>
+          <p> About</p>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="details-left">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Sreamline processes, create team rituals, and watch
+          productivity soar.</p>
+        <button class="btn">Learn more</button>
 
-  Login
+        <div class="sponsers">
+          <img src="./images/client-databiz.svg" alt="">
+          <img src="./images/client-audiophile.svg" alt="">
+          <img src="./images/client-meet.svg" alt="">
+          <img src="./images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="hero-container">
+        <img src="./images/image-hero-desktop.png" alt="hero-picture">
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Login
   Register
 
   Make remote work
 
-  Get your team in sync, no matter your location. Streamline processes, 
+  Get your team in sync, no matter your location. Streamline processes,
   create team rituals, and watch productivity soar.
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Learn more -->
+  <script src="./script.js"></script>
 </body>
+
 </html>
