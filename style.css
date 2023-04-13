@@ -338,12 +338,12 @@ p {
 }
 @media screen and (max-width: 400px) {
   .mobile-view {
-    right: 6%;
+    right: 0%;
     top: 0%;
   }
   .menu-btn {
     top: 1%;
-    right: 10%;
+    right: 1%;
   }
   .details-left > .sponsers {
     gap: 0.5rem;
