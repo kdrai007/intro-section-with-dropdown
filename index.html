@@ -15,7 +15,7 @@
 
 <body>
   <main>
-    <nav>
+    <nav class="no-selection ">
       <div class="left">
         <h3>snap</h3>
         <ul class="hide">
@@ -52,13 +52,24 @@
       </div>
     </nav>
     <button class="menu-btn"> <img src="./images/icon-menu.svg" alt=""></button>
-    <div class="mobile-view hidden" style="display:none">
+    <div class="mobile-view no-selection " style="display:none">
       <ul>
-        <li class="Features">
-          <p>Features <img src="./images/icon-arrow-down.svg" alt=""> </p>
+        <li class="menu-feature">
+          <p>Features <img class="menu-feature_icon" src="./images/icon-arrow-down.svg" alt=""> </p>
+          <ul class="menu-all-feature" style="display: none;">
+            <li><img src="./images/icon-todo.svg" alt=""> Todo List</li>
+            <li><img src="./images/icon-planning.svg" alt=""> Planning</li>
+            <li><img src="./images/icon-reminders.svg" alt=""> Reminder</li>
+            <li><img src="./images/icon-calendar.svg" alt=""> Calender</li>
+          </ul>
         </li>
-        <li>
-          <p>Company <img src="./images/icon-arrow-down.svg" alt=""> </p>
+        <li class="menu-company">
+          <p>Company <img class="menu-company_icon" src="./images/icon-arrow-down.svg" alt=""> </p>
+          <ul class="menu-all-company" style="display:none">
+            <li>History</li>
+            <li>Team Blog</li>
+            <li>Carrers</li>
+          </ul>
         </li>
         <li>
           <p> Careers</p>
@@ -67,38 +78,34 @@
           <p> About</p>
         </li>
       </ul>
-    </div>
-    <div class="container">
-      <div class="details-left">
-        <h1>Make remote work</h1>
-        <p>Get your team in sync, no matter your location. Sreamline processes, create team rituals, and watch
-          productivity soar.</p>
-        <button class="btn">Learn more</button>
+      <div class="menu-bottom">
+        <!-- <a href="#">Login</a> -->
+        <p>Login</p>
+        <button>Register</button>
 
-        <div class="sponsers">
-          <img src="./images/client-databiz.svg" alt="">
-          <img src="./images/client-audiophile.svg" alt="">
-          <img src="./images/client-meet.svg" alt="">
-          <img src="./images/client-maker.svg" alt="">
-        </div>
       </div>
-      <div class="hero-container">
-        <img src="./images/image-hero-desktop.png" alt="hero-picture">
+    </div>
+    <div class="main-container">
+      <div class="container">
+        <div class="details-left">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Sreamline processes, create team rituals, and watch
+            productivity soar.</p>
+          <button class="btn">Learn more</button>
+
+          <div class="sponsers">
+            <img src="./images/client-databiz.svg" alt="">
+            <img src="./images/client-audiophile.svg" alt="">
+            <img src="./images/client-meet.svg" alt="">
+            <img src="./images/client-maker.svg" alt="">
+          </div>
+        </div>
+        <div class="hero-container">
+
+        </div>
       </div>
     </div>
   </main>
-
-
-
-  <!-- Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
-
-  Learn more -->
   <script src="./script.js"></script>
 </body>
 

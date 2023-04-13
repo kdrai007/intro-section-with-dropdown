@@ -16,9 +16,20 @@ $(function () {
     $(".mobile-view").toggle(100);
     $("body").toggleClass("class2");
     let menuBtn = $(".menu-btn img");
-    if (menuBtn.attr("src") == "./images/icon-close-menu.svg")
+    if (menuBtn.attr("src") == "./images/icon-close-menu.svg") {
+      $(".menu-all-feature").hide();
+      $(".menu-all-company").hide();
       menuBtn.attr("src", "./images/icon-menu.svg");
-    else menuBtn.attr("src", "./images/icon-close-menu.svg");
+    } else menuBtn.attr("src", "./images/icon-close-menu.svg");
+  });
+  //handling feature section in mobile view
+  $(".menu-feature").click(function () {
+    $(".menu-all-feature").slideToggle(100);
+    handleArrow(".menu-feature_icon");
+  });
+  $(".menu-company").click(function () {
+    $(".menu-all-company").slideToggle(100);
+    handleArrow(".menu-company_icon");
   });
 });
 function handleArrow(cls) {
