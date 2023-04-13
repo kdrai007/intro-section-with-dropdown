@@ -302,7 +302,7 @@ p {
   .container > .hero-container,
   .details-left {
     width: 100%;
-    height: 28rem;
+    height: 20rem;
   }
   .container > .hero-container {
     background-image: url("./images/image-hero-mobile.png");
@@ -316,10 +316,36 @@ p {
     margin: 0;
   }
   .details-left > p {
-    padding: 0 4rem;
+    padding: 0 3rem;
     line-height: 1.5;
   }
   .details-left > .sponsers {
-    gap: 3rem;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-view {
+    right: 4%;
+    top: 0%;
+  }
+  .menu-btn {
+    top: 1%;
+    right: 8%;
+  }
+  .details-left > .sponsers {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mobile-view {
+    right: 6%;
+    top: 0%;
+  }
+  .menu-btn {
+    top: 1%;
+    right: 10%;
+  }
+  .details-left > .sponsers {
+    gap: 0.5rem;
   }
 }
